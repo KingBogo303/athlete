@@ -4,6 +4,29 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+:root {
+  --light-yellow: #fff9db;
+  --light-yellow-2: #ffe066;
+}
+
+.bg-yell-1 {
+  background-color: var(--light-yellow);
+}
+.bg-yell-2 {
+  background-color: goldenrod !important;
+}
+.prem {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(180px, 200px)); */
+}
+
+@media (max-device-width: 1120px) {
+  .prem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-device-width: 992px) {
   .scroll-items {
