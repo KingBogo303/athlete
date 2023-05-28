@@ -48,6 +48,13 @@
   transform: rotateX(180deg);
 }
 @media (max-device-width: 560px) {
+  .avatar img {
+    height: 150px;
+    width: 150px;
+  }
+  .fixImg {
+    height: 200px !important;
+  }
   .clearfix .floatAdj {
     float: left !important;
     margin-block-start: 100px;
