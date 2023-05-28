@@ -47,3 +47,9 @@
 .flipY180 {
   transform: rotateX(180deg);
 }
+@media (max-device-width: 560px) {
+  .clearfix .floatAdj {
+    float: left !important;
+    margin-block-start: 100px;
+  }
+}
