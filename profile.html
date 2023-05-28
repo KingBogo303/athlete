@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athlete</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg py-3 bg-body-tertiary navbar-dark bg-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto my-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collegues</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Commits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+
+            <div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-4">
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-transparent text-light p-0 position-relative d-flex flex-column align-items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="currentColor"
+                      class="bi bi-bullseye"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                      />
+                      <path
+                        d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+                      />
+                      <path
+                        d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+                      />
+                      <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                    Targets
+
+                    <!-- <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span> -->
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-transparent text-light p-0 position-relative d-flex flex-column align-items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="currentColor"
+                      class="bi bi-bell"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                      />
+                    </svg>
+                    Alerts
+
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      1
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-transparent text-light p-0 position-relative d-flex flex-column align-items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="currentColor"
+                      class="bi bi-chat-square"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                      />
+                    </svg>
+                    Messages
+
+                    <!-- <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span> -->
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-transparent text-light p-0 position-relative d-flex flex-column align-items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="currentColor"
+                      class="bi bi-caret-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"
+                      />
+                    </svg>
+                    Premium
+
+                    <!-- <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      >
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                      </span> -->
+                  </button>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle d-flex align-items-center gap-1"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      fill="currentColor"
+                      class="bi bi-person-circle"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                      />
+                    </svg>
+                    Dan
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <main class="row gap-4 py-4 px-3">
+        <article class="bg-danger col p-0">
+          <div class="card" style="width: 100%">
+            <div class="position-relative">
+              <div class="avatar border">
+                <div class="position-relative">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    alt="an avatar"
+                    class="border"
+                  />
+                  <div class="camera border">
+                    <i class="bi bi-camera-fill"></i>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                src="https://th.bing.com/th/id/OIP.E2DIWx6-3lWdsPCi6sKbugHaDE?w=294&h=145&c=7&r=0&o=5&pid=1.7"
+                class="card-img-top fixImg"
+                width="100%"
+                height="240px"
+                alt="..."
+              />
+            </div>
+            <div class="mt-3 clearfix">
+              <div class="float-end d-flex gap-2 me-4">
+                <button type="button" class="fw-bold btn btn-primary">
+                  Edit Profile (29%)
+                </button>
+                <button
+                  type="button"
+                  class="flipY180 py-1 btn btn-outline-primary"
+                >
+                  <i class="fs-5 bi bi-arrow-return-right"></i>
+                </button>
+                <button type="button" class="py-1 btn btn-outline-primary">
+                  <i class="fs-5 bi bi-three-dots"></i>
+                </button>
+              </div>
+            </div>
+            <div class="card-body mt-5">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </article>
+        <aside class="bg-warning col-xs-12 col-md-4">fs</aside>
+      </main>
+    </div>
+  </body>
+</html>
