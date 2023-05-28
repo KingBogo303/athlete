@@ -76,3 +76,8 @@
     padding-inline: 5px;
   }
 }
+@media (max-device-width: 500px) {
+  .acc {
+    font-size: 16.5px;
+  }
+}
