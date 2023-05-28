@@ -53,7 +53,13 @@
   border-radius: 50%;
   background-color: var(--black);
 }
-
+.be-fix {
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.822) !important;
+  color: var(--white);
+  bottom: 15px;
+  right: 15px;
+}
 @media (max-device-width: 1120px) {
   .prem {
     grid-template-columns: repeat(2, 1fr);

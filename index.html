@@ -247,10 +247,12 @@
               <div class="col p-0">
                 <h4 class="text-primary">DAN OGBO</h4>
                 <p class="mb-1">HS 2023 Uncommited</p>
-                <p class="mb-1 d-flex align-items-center text-primary">
+                <button
+                  class="btn btn-outline-primary mb-1 d-flex align-items-center py-0 px-1 border-0"
+                >
                   <i class="bi bi-plus fs-3"></i>
                   ADD YOUR TEAMS
-                </p>
+                </button>
               </div>
             </div>
           </div>
@@ -377,6 +379,51 @@
             </div>
           </div>
         </article>
+        <div
+          class="toast position-fixed be-fix show"
+          role="alert"
+          data-bs-autohide="false"
+          aria-live="assertive"
+          aria-atomic="true"
+          animation="true"
+        >
+          <!-- <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="..." />
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button
+              type="button"
+              class="btn-close end-continue"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div> -->
+          <div class="toast-body">
+            <button
+              type="button"
+              class="btn-close text-light bg-light ms-auto d-block mb-2 end-continue"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+            <div
+              class="progress mb-3 bg-secondary"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="28.6"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div
+                class="progress-bar"
+                style="width: 28.6%; background-color: #51cf66"
+              ></div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="m-0">Completed 2 of 7</p>
+              <button class="btn btn-primary">Continue Setup</button>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
