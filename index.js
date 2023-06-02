@@ -3,12 +3,12 @@
 //   return new bootstrap.Toast(toastEl, option)
 // })
 
-const toast = new bootstrap.Toast('.toast')
-toast.show()
+const toast = new bootstrap.Toast(".toast");
+toast.show();
 
-const end = document.querySelector('.end-continue');
-const adjToast = document.querySelector('.be-fix')
+const end = document.querySelector(".end-continue");
+const adjToast = document.querySelector(".be-fix");
 
-end.addEventListener('click', ()=>{
-    adjToast.classList.add('hide')
-})
+end.addEventListener("click", () => {
+  adjToast.classList.add("hide");
+});
